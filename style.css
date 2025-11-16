@@ -1,0 +1,35 @@
+:root{
+  --bg:#f7f8fb; --card:#ffffff; --accent:#0b66c3; --muted:#666;
+  --maxw:960px;
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+*{box-sizing:border-box}
+body{
+  margin:0; background:var(--bg); color:#111; line-height:1.5;
+}
+.container{max-width:var(--maxw); margin:28px auto; padding:0 16px;}
+.site-header, .site-footer{
+  background:linear-gradient(90deg, #fff, #f1f6fb);
+  border-bottom:1px solid #e6eef9;
+  padding:18px 0;
+}
+.header-inner{display:flex; align-items:center; justify-content:space-between; gap:12px}
+.brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit}
+.brand .logo{width:48px; height:48px; background:var(--accent); color:#fff; display:flex; align-items:center; justify-content:center; border-radius:8px; font-weight:700}
+.nav{display:flex; gap:12px}
+.nav a{color:var(--accent); text-decoration:none; font-weight:600}
+.hero{background:var(--card); padding:22px; border-radius:10px; box-shadow:0 6px 18px rgba(13,40,80,0.06)}
+.grid{display:grid; grid-template-columns:repeat(auto-fit,minmax(220px,1fr)); gap:16px; margin-top:16px}
+.card{background:var(--card); padding:16px; border-radius:8px; box-shadow:0 6px 14px rgba(13,40,80,0.04)}
+h1{margin:0 0 12px 0; font-size:1.4rem}
+h2{margin:8px 0 10px; font-size:1.1rem; color:#0b274b}
+p{margin:0 0 10px}
+.skill-list{display:flex; gap:8px; flex-wrap:wrap; margin-top:8px}
+.skill{background:#eef6ff; color:var(--accent); padding:6px 8px; border-radius:6px; font-size:0.95rem}
+.btn{display:inline-block; background:var(--accent); color:#fff; padding:10px 14px; border-radius:8px; text-decoration:none; font-weight:600}
+.meta{color:var(--muted); font-size:0.9rem}
+.article{max-width:70ch}
+.footer-inner{display:flex; justify-content:space-between; align-items:center; gap:12px; flex-wrap:wrap}
+.small{font-size:0.9rem; color:var(--muted)}
+a.inline-link{color:var(--accent); text-decoration:underline}
+@media (max-width:540px){.header-inner{flex-direction:column; align-items:flex-start}}

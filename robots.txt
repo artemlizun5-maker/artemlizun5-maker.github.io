@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://artemlizun5.github.io/sitemap.xml
