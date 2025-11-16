@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://artemlizun5-maker.github.io/artemlizun5.github.io/index.html
+Sitemap: https://artemlizun5-maker.github.io/artemlizun5.github.io/sitemap.xml
+
