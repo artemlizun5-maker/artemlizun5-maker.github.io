@@ -57,6 +57,21 @@
       <div class="small">Гитхаб: <a href="https://github.com/artemlizun5" onclick="ym(105347352,'reachGoal','github_click'); return true;">github.com/artemlizun5</a></div>
     </div>
   </footer>
+  <script>
+if (typeof ym !== 'undefined') {
+    function trackScroll() {
+        const pageHeight = document.documentElement.scrollHeight;
+        const scrolled = window.scrollY + window.innerHeight;
+        const scrollPercent = Math.floor((scrolled / pageHeight) * 100);
+
+        if (scrollPercent >= 75) {
+            ym(105347352, 'reachGoal', 'scroll_75');
+            window.removeEventListener('scroll', trackScroll);
+        }
+    }
+    window.addEventListener('scroll', trackScroll);
+}
+</script>
 <!-- Yandex.Metrika counter -->
 <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
@@ -72,6 +87,7 @@
 <!-- /Yandex.Metrika counter -->
 </body>
 </html>
+
 
 
 
